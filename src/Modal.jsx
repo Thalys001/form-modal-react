@@ -10,7 +10,7 @@ const Modal = () => {
 
   return (
     <>
-      <button className='btn-primary' onClick={toggle}> Abrir Modal</button>
+      <button className='btn btn-primary' onClick={toggle}> Abrir Modal</button>
       <div className={`modal ${show && 'show'}`} onClick={toggle}>
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
           <div className="modal-header">
@@ -28,8 +28,8 @@ const Modal = () => {
             </div>
           </div>
           <div className="modal-footer">
-            <button className="btn-cancel">Cancelar</button>
-            <button className="btn-primary">Salvar</button>
+            <button className="btn btn-cancel">Cancelar</button>
+            <button className="btn btn-primary">Salvar</button>
           </div>
         </div>
       </div>
